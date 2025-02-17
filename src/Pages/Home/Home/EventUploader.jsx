@@ -35,7 +35,7 @@ const EventUploader = () => {
     formData.append("date", date);
 
     try {
-      await axios.post("http://localhost:5000/upload", formData, {
+      await axios.post("https://nativeadminpost.vercel.app/upload", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       alert("Event uploaded successfully");

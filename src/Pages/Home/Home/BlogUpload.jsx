@@ -30,7 +30,7 @@ const BlogUpload = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/blogs",
+        "https://nativeadminpost.vercel.app/blogs",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
